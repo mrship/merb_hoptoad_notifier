@@ -33,6 +33,7 @@ module Merb
           :url              => "#{request.protocol}://#{request.host}#{request.path}",
           :component        => request.params['controller'],
           :action           => request.params['action'],
+          :params           => request.params,
           :request          => request,
           :framework_env    => Merb.env,
           :notifier_name    => 'Merb::HoptoadNotifier',
